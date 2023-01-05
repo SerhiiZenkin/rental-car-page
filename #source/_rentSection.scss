@@ -16,9 +16,15 @@
 .rent-cars-title {
   color: #fff;
   font-family: $font-M;
-  font-size: $font-size * 3;
+  font-size: $fz * 3;
   font-weight: 400;
   line-height: 1em;
+  transform: scale(70%) translateX(-10%);
+  transform-origin: left bottom;
+  transition: $tt;
+  opacity: 0;
+  visibility: hidden;
+  
 }
 .rent-cars-call {
 justify-self: center;
@@ -32,6 +38,27 @@ visibility: hidden;
 .rent-cars-call-btn {
   @include button;
   background-color: #3c496f;
-  font-size: $font-size*1.5;
+  font-size: $fz*1.5;
   padding: 25px;
+}
+
+.rent-car-title {
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto $fz*3;
+  h1 {
+    font-family: $font-M;
+    font-size: $fz*3;
+    font-weight: 400;
+    text-align: center;
+  }
+  p {
+    margin-top: $fz*2;
+    padding: 0 $fz*3;
+    text-align: center;
+    font-family: $font-R;
+    font-style: italic;
+    font-size: $fz+3px;
+    line-height: $fz*1.5;
+  }
 }

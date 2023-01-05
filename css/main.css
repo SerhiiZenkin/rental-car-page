@@ -50,7 +50,7 @@ a, a:visited {
 }
 
 .scroll-animation {
-  line-height: normal;
+  line-height: initial;
 }
 
 .visible {
@@ -61,7 +61,7 @@ a, a:visited {
 }
 
 .scroll-animation {
-  line-height: normal;
+  line-height: initial;
 }
 
 .rent-header {
@@ -87,6 +87,14 @@ a, a:visited {
   font-size: 48px;
   font-weight: 400;
   line-height: 1em;
+  -webkit-transform: scale(70%) translateX(-10%);
+          transform: scale(70%) translateX(-10%);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .rent-cars-call {
@@ -117,7 +125,8 @@ a, a:visited {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 16px;
-  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -137,13 +146,34 @@ a, a:visited {
   font-size: 24px;
   padding: 25px;
 }
-.rent-cars-call-btn:hover, .rent-cars-call-btn:focus {
+.rent-cars-call-btn:hover {
   background-color: #16437E;
   color: #ffffff;
 }
 .rent-cars-call-btn:active {
   background: #09223b;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.rent-car-title {
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto 48px;
+}
+.rent-car-title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+.rent-car-title p {
+  margin-top: 32px;
+  padding: 0 48px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 24px;
 }
 
 body {

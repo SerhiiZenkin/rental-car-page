@@ -4,7 +4,7 @@
 // Variables and templates//
 $font-R: "Roboto", sans-serif;
 $font-M: "Montserrat", sans-serif;
-$font-size: 16px;
+$fz: 16px;
 $tt: all 1.5s ease;
 
 .visible {
@@ -13,7 +13,7 @@ $tt: all 1.5s ease;
   transform: translate(0px, 0px) !important;
 }
 .scroll-animation {
-  line-height: normal;
+  line-height:initial;
 }
 
 @mixin button {
@@ -24,8 +24,9 @@ $tt: all 1.5s ease;
   box-sizing: border-box;
   color: #ffffff;
   display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: $fz;
+  font-family: $font-R;
+  font-weight: 500;
   justify-content: center;
   line-height: 20px;
   min-height: 40px;
@@ -36,8 +37,7 @@ $tt: all 1.5s ease;
   text-align: center;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   vertical-align: middle;
-  &:hover,
-  &:focus { 
+  &:hover { 
     background-color: #16437E;
     color: #ffffff;
   }
