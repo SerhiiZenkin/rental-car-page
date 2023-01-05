@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+// Variables and templates//
+$font-R: "Roboto", sans-serif;
+$font-M: "Montserrat", sans-serif;
+$font-size: 16px;
+$tt: all 1.5s ease;
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translate(0px, 0px) !important;
+}
+.scroll-animation {
+  line-height: normal;
+}
+
+@mixin button {
+  align-items: center;
+  background-color: #0A66C2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  vertical-align: middle;
+  &:hover,
+  &:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+  }
+  &:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+  }
+
+}
+
+
+
+
+

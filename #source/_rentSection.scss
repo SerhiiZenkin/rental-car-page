@@ -1,0 +1,37 @@
+@import "variables";
+// MAIN START
+.rent-header {
+  background-color: #3151aa;
+  width: 100%;
+  padding: 50px 0;
+}
+.rent-header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px 0px;
+  background-color: inherit;
+}
+.rent-cars-title {
+  color: #fff;
+  font-family: $font-M;
+  font-size: $font-size * 3;
+  font-weight: 400;
+  line-height: 1em;
+}
+.rent-cars-call {
+justify-self: center;
+align-self: center;
+transform: translate(100%);
+transition: $tt;
+opacity: 0;
+visibility: hidden;
+}
+
+.rent-cars-call-btn {
+  @include button;
+  background-color: #3c496f;
+  font-size: $font-size*1.5;
+  padding: 25px;
+}
