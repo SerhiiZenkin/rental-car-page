@@ -1,5 +1,6 @@
 @import "variables";
 // MAIN START
+// RENT SECTION START
 .rent-header {
   background-color: #3151aa;
   width: 100%;
@@ -19,7 +20,7 @@
   font-size: $fz * 3;
   font-weight: 400;
   line-height: 1em;
-  transform: scale(70%) translateX(-10%);
+  transform: scale(30%) translateX(-10%);
   transform-origin: left bottom;
   transition: $tt;
   opacity: 0;
@@ -45,12 +46,17 @@ visibility: hidden;
 .rent-car-title {
   padding: 30px 0;
   width: 80%;
-  margin: 0 auto $fz*3;
+  margin: $fz*2 auto $fz*3;
   h1 {
     font-family: $font-M;
     font-size: $fz*3;
     font-weight: 400;
     text-align: center;
+    transform: scale(30%);
+    transition: $tt;
+    opacity: 0;
+    visibility: hidden;
+
   }
   p {
     margin-top: $fz*2;
@@ -60,5 +66,67 @@ visibility: hidden;
     font-style: italic;
     font-size: $fz+3px;
     line-height: $fz*1.5;
+    transform: translateY(300%);
+    transition: $tt;
+    opacity: 0;
+    visibility: hidden;
   }
 }
+.cars-container {
+  width: 80%;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 20px; 
+}
+.car {
+  width: 100%;
+  justify-self: center;
+  transform: translate(-70%);
+  transition: $tt;
+  opacity: 0;
+  visibility: hidden;
+
+}
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+.description {
+  transform: translate(70%);
+  transition: $tt;
+  opacity: 0;
+  visibility: hidden;
+  h3 {
+    font-family: $font-M;
+    font-size: $fz*1.5;
+    font-weight: 600;
+    margin-bottom: $fz*2;
+  }
+  p {
+    font-family: $font-R;
+    font-size: $fz;
+    line-height: $fz*1.5;
+    text-align: justify;
+  }
+}
+.car-icons {
+  font-family: $font-R;
+  font-size: $fz;
+  line-height: $fz*1.5;
+  display: flex;
+  align-items: center;
+  margin-bottom: $fz;
+  img {
+    height: $fz+2px;
+  }
+  span {
+    margin-right: 10px;
+  }
+}
+.service-btn {
+  @include button;
+  margin-top: $fz;
+}
+// RENT SECTION END

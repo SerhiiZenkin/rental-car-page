@@ -31,7 +31,6 @@ $tt: all 1.5s ease;
   line-height: 20px;
   min-height: 40px;
   overflow: hidden;
-  padding: 0px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -40,6 +39,7 @@ $tt: all 1.5s ease;
   &:hover { 
     background-color: #16437E;
     color: #ffffff;
+    cursor: url(../icons/ferrari-pointer.svg), default;
   }
   &:active {
     background: #09223b;

@@ -27,7 +27,10 @@ body {
                        color-stop(0.72, rgb(73,125,189)),
                        color-stop(0.86, rgb(28,58,148)));
   }
+
+  cursor: url(../icons/porsche-cursor.svg), default;
 }
+
 // HEADER START
 .header-top {
   background-color: #fff;
@@ -108,7 +111,7 @@ body {
     &:hover {
       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
         rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-      cursor: pointer;
+      cursor: url(../icons/ferrari-pointer.svg), default;
       opacity: 1;
     }
   }
