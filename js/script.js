@@ -1,3 +1,5 @@
+// scroll observer///
+
 function scrolling(entry) {
   entry.forEach((change) => {
     if (change.isIntersecting) {
@@ -18,6 +20,8 @@ for (let elm of elements) {
   observer.observe(elm);
 }
 
+//// back to top fuction///
+
 function toTop () {
   window.scroll({
     top: 0, left: 0, behavior: "smooth"
@@ -35,3 +39,22 @@ function goTop () {
 }
 window.addEventListener("scroll", goTop);
 window.addEventListener("resize", goTop);
+
+
+///// pop-up visible///
+
+const popupButton = document.querySelector(".footer-button");
+const body = document.querySelector("body");
+const popupClose = document.querySelector(".popup-close");
+const popup = document.querySelector(".popup");
+
+
+popupButton.addEventListener("click", ()=> {
+  popup.classList.add("open");
+  body.classList.add("lock");
+});
+
+popupClose.addEventListener("click", ()=> {
+  popup.classList.remove("open");
+  body.classList.remove("lock");
+});

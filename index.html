@@ -313,6 +313,37 @@
     <footer class="footer">
       <div class="footer-button"> Contact us</div>
       <div class="back-to-top"></div>
+      <div class="popup" id="popup">
+        <form action="#">
+          <div class="popup-body">
+            <div class="popup-content">
+              <a href="#" class="popup-close">X</a>
+              <div class="popup-title">Get in touch</div>
+              <label for="name"> Name </label>
+              <input
+                type="text"
+                class="popup-input"
+                name="name"
+                id="name"
+                required
+              />
+              <label for="email"> E-mail </label>
+              <input type="email" id="email" class="popup-input" required />
+              <label for="phone"> Phone </label>
+              <input type="tel" class="popup-input" id="phone" />
+              <label for="textarea">Text here </label>
+              <textarea
+                class="popup-textarea"
+                name="text"
+                id="textarea"
+                cols="25"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="popup-button">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </footer>
     <script src="./js/script.js"></script>
   </body>

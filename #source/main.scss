@@ -34,6 +34,10 @@ body {
   }
 
   cursor: url(../icons/porsche-cursor.svg), default;
+
+  &.lock {
+    overflow-y: hidden;
+  }
 }
 
 // HEADER START
