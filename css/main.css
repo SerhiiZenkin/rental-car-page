@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -719,17 +721,17 @@ a, a:visited {
   line-height: initial;
 }
 
-.drive-rental {
+#drive-rental {
   background-color: #fff;
   padding: 50px 0;
   width: 100%;
 }
-.drive-rental .drive-rental-top {
+#drive-rental .drive-rental-top {
   width: 80%;
-  padding: 75px 0;
+  padding: 50px 0;
   margin: 0 auto;
 }
-.drive-rental .drive-rental-top .drive-img-container {
+#drive-rental .drive-rental-top #drive-img-container {
   width: 70%;
   margin: 0 auto;
   -webkit-transform: scale(30%);
@@ -739,59 +741,40 @@ a, a:visited {
   opacity: 0;
   visibility: hidden;
 }
-.drive-rental .drive-rental-top .drive-img-container img {
+#drive-rental .drive-rental-top #drive-img-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.drive-rental .drive-rental-top .drive-title-wrapper {
-  width: 80%;
-  margin: 0 auto;
+
+.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  -webkit-transform: translate(0px, 0px) !important;
+          transform: translate(0px, 0px) !important;
+}
+
+.scroll-animation {
+  line-height: initial;
+}
+
+.footer {
+  background: #333333;
+  min-height: 150px;
   padding: 30px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.drive-rental .drive-rental-top .drive-title-wrapper h2.drive-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  color: #000;
-  text-align: center;
-  line-height: 64px;
-  -webkit-transform: scale(30%);
-          transform: scale(30%);
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
-  opacity: 0;
-  visibility: hidden;
-}
-.drive-rental .drive-rental-top .drive-title-wrapper p.drive-text {
-  color: #000;
-  margin-top: 32px;
-  padding: 0 96px 15px;
-  text-align: center;
-  line-height: 32px;
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-size: 19px;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
-  opacity: 0;
-  visibility: hidden;
-}
-.drive-rental .drive-rental-top .drive-title-wrapper button.drive-button {
+.footer .footer-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -822,24 +805,49 @@ a, a:visited {
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, -webkit-box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   vertical-align: middle;
   text-transform: uppercase;
-  margin: 10px auto;
-  -webkit-transform: scale(30%);
-          transform: scale(30%);
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
-  opacity: 0;
-  visibility: hidden;
 }
-.drive-rental .drive-rental-top .drive-title-wrapper button.drive-button:hover {
+.footer .footer-button:hover {
   background-color: #16437E;
   color: #ffffff;
 }
-.drive-rental .drive-rental-top .drive-title-wrapper button.drive-button:active {
+.footer .footer-button:active {
   background: #09223b;
   color: rgba(255, 255, 255, 0.7);
 }
-.drive-rental .drive-rental-top .drive-title-wrapper button.drive-button:active:active {
+.footer .footer-button:active:active {
   cursor: url(../icons/ferrari-pointer.svg), default;
+}
+
+.footer .back-to-top {
+  width: 2.65rem;
+  height: 2.65rem;
+  position: fixed;
+  bottom: 1.38rem;
+  background: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.35);
+  background-image: url(../icons/arrow-up.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+  margin-left: 93%;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  visibility: none;
+  opacity: 0;
+}
+.footer .back-to-top.show {
+  visibility: visible;
+  opacity: 0.6;
+}
+.footer .back-to-top:hover {
+  border: 1px solid blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body {
@@ -890,13 +898,13 @@ body::-webkit-scrollbar-thumb {
   -ms-grid-column: 2;
 }
 .header-top .header-logo {
-  width: 110px;
+  max-width: 100px;
 }
 .header-top .header-logo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header-top nav {
   -ms-grid-column-align: end;
@@ -938,6 +946,13 @@ body::-webkit-scrollbar-thumb {
 
 .header-img {
   width: 100%;
+  height: 600px;
+}
+.header-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-cards {

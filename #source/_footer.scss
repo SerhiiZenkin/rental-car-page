@@ -1,0 +1,47 @@
+@import "variables";
+
+.footer {
+  background: #333333;
+  min-height: 150px;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+    .footer-button {
+      @include button;
+      text-transform: uppercase;
+    }
+}
+
+// top to bottom button
+
+.footer .back-to-top {
+  width: 2.65rem;
+  height: 2.65rem;
+  position: fixed;
+  bottom: 1.38rem;
+  background: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.35);
+  background-image: url(../icons/arrow-up.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+  margin-left: 93%;
+  transition: 0.15s;
+  visibility: none;
+  opacity: 0;
+  &.show {
+    visibility: visible;
+    opacity: 0.6;
+  }
+  &:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+}

@@ -1,16 +1,16 @@
 @import "variables";
 
-.drive-rental {
+#drive-rental {
   background-color: #fff;
   padding: 50px 0;
   width: 100%;
  
   .drive-rental-top {
     width: 80%;
-    padding: 75px 0;
+    padding: 50px 0;
     margin: 0 auto;
   
-      .drive-img-container {
+      #drive-img-container {
         width: 70%;
         margin: 0 auto;
         transform: scale(30%);
@@ -23,53 +23,5 @@
           object-fit: cover;
         }
       }
-
-      .drive-title-wrapper {
-        width: 80%;
-        margin: 0 auto;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        h2.drive-title {
-          font-family: $font-M;
-          font-weight: 400;
-          font-size: $fz * 3;
-          color: #000;
-          text-align: center;
-          line-height: $fz * 4;
-          transform: scale(30%);
-          transition: $tt;
-          opacity: 0;
-          visibility: hidden;
-        }
-        p.drive-text {
-          color: #000;
-          margin-top: $fz * 2;
-          padding: 0 $fz * 6 15px;
-          text-align: center;
-          line-height: $fz * 2;
-          font-weight: 300;
-          font-family: $font-R;
-          font-style: italic;
-          font-size: $fz + 3px;
-          transform: translateY(100%);
-          transition: $tt;
-          opacity: 0;
-          visibility: hidden;
-        }
-        button.drive-button {
-          @include button;
-          text-transform: uppercase;
-          // padding: $fz $fz * 3;
-          margin: 10px auto;
-          transform: scale(30%);
-          transition: $tt;
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
-
-}
-
-}
+    }
+  }

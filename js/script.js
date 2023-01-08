@@ -17,3 +17,21 @@ let elements = document.querySelectorAll(".scroll-animation");
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+function toTop () {
+  window.scroll({
+    top: 0, left: 0, behavior: "smooth"
+  });
+}
+
+function goTop () {
+  if (window.scrollY >= 1000) {
+    document.querySelector(".back-to-top").classList.add("show");
+    document.querySelector(".back-to-top").addEventListener("click", toTop)
+
+  } else {
+    document.querySelector(".back-to-top").classList.remove("show");
+  }
+}
+window.addEventListener("scroll", goTop);
+window.addEventListener("resize", goTop);
