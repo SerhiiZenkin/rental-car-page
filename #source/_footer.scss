@@ -129,7 +129,7 @@
       .popup-content { grid-template-columns: 1fr; width: 60%;}
     }
     @media(max-width:651px) {
-      .popup-content { grid-template-columns: 1fr; width: 80%; z-index: 40;}
+      .popup-content { grid-template-columns: 1fr; width: 100%; overflow: auto;}
     }
     @media(max-width:360px) {
       .popup-content { grid-template-columns: 1fr; width: 100%; overflow: auto;}

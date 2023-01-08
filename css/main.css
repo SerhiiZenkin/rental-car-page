@@ -436,6 +436,17 @@ a, a:visited {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 920px) {
+  .valued-deals-container .valued-deals-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .valued-deals-container .valued-deals-bottom .left-img-wrapper {
   padding-right: 50px;
 }
@@ -474,6 +485,14 @@ a, a:visited {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 1050px) {
+  .valued-deals-container .valued-deals-bottom .right-text-wrapper {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .valued-deals-container .valued-deals-bottom .right-text-wrapper h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -492,6 +511,11 @@ a, a:visited {
   font-size: 16px;
   line-height: 32px;
   margin-bottom: 25px;
+}
+@media (max-width: 1050px) {
+  .valued-deals-container .valued-deals-bottom .right-text-wrapper p {
+    line-height: 16px;
+  }
 }
 .valued-deals-container .valued-deals-bottom .right-text-wrapper button {
   -webkit-box-align: center;
@@ -554,6 +578,11 @@ a, a:visited {
   width: 100%;
   background-color: #945a5c;
   padding: 48px 0px;
+}
+@media (max-width: 685px) {
+  .traveler-information {
+    padding: 25px 0px;
+  }
 }
 .traveler-information .traveler-image-container {
   max-width: 90%;
@@ -625,6 +654,12 @@ a, a:visited {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 685px) {
+  .traveler-information .traveler-title-wrapper {
+    width: 95%;
+    padding: 15px;
+  }
+}
 .traveler-information .traveler-title-wrapper h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -638,6 +673,12 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 1050px) {
+  .traveler-information .traveler-title-wrapper h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .traveler-information .traveler-title-wrapper p {
   color: #fff;
@@ -655,6 +696,23 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 1050px) {
+  .traveler-information .traveler-title-wrapper p {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+    visibility: visible;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0 48px 15px;
+  }
+}
+@media (max-width: 685px) {
+  .traveler-information .traveler-title-wrapper p {
+    text-align: justify;
+    padding: 15px;
+  }
 }
 .traveler-information .traveler-title-wrapper button {
   -webkit-box-align: center;
@@ -947,8 +1005,8 @@ a, a:visited {
   .footer .popup-content {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    width: 80%;
-    z-index: 40;
+    width: 100%;
+    overflow: auto;
   }
 }
 @media (max-width: 360px) {
@@ -1051,6 +1109,11 @@ body.lock {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-width: 740px) {
+  .header-top .header-logo {
+    max-width: 50px;
+  }
+}
 .header-top nav {
   -ms-grid-column-align: end;
       justify-self: end;
@@ -1087,6 +1150,11 @@ body.lock {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+@media (max-width: 740px) {
+  .header-top .header-menu-links {
+    font-size: 14px;
+  }
 }
 
 .header-img {
@@ -1162,6 +1230,28 @@ body.lock {
   margin-top: 20px;
 }
 
+@media (max-width: 920px) {
+  .header-cards-card {
+    font-size: 16px;
+  }
+  .header-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 612px) {
+  .header-cards-card {
+    font-size: 16px;
+  }
+  .header-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .header-contacts {
   margin: 5% auto;
   width: 90%;
@@ -1198,4 +1288,9 @@ body.lock {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
+}
+@media (max-width: 612px) {
+  .header-contact {
+    font-size: 16px;
+  }
 }

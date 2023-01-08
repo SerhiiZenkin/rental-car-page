@@ -4,6 +4,9 @@
   width: 100%;
   background-color: #945a5c;
   padding: $fz*3 0px;
+  @media(max-width:685px) {
+    padding: 25px 0px;
+  }
 
     .traveler-image-container {
       max-width: 90%;
@@ -38,6 +41,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media(max-width:685px) {
+          width: 95%;
+          padding: 15px;
+        }
         h2  {
           font-family: $font-M;
           font-weight: 400;
@@ -49,6 +56,10 @@
           transition: $tt;
           opacity: 0;
           visibility: hidden;
+          @media(max-width:1050px) {
+            font-size: $fz * 2;
+            line-height: $fz * 2;
+          }
         }
         p {
           color: #fff;
@@ -64,6 +75,20 @@
           transition: $tt;
           opacity: 0;
           visibility: hidden;
+          @media(max-width:1050px) {
+            transform: translate(0, 0);
+            opacity: 1;
+            visibility: visible;
+            font-size: $fz;
+            line-height: $fz;
+            padding: 0 $fz * 3 15px;
+          }
+
+          @media(max-width:685px) {
+           text-align: justify;
+           padding: 15px;
+          }
+
         }
         button {
           @include button;

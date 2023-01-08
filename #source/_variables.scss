@@ -7,6 +7,10 @@ $font-M: "Montserrat", sans-serif;
 $fz: 16px;
 $tt: all 1.5s ease;
 
+@media(max-width:612px) {
+  $fz: 12px;
+}
+
 .visible {
   opacity: 1 !important;
   visibility: visible !important;
