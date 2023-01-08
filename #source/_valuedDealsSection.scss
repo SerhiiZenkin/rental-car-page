@@ -1,0 +1,124 @@
+@import "variables";
+
+.valued-deals-container {
+  width: 100%;
+
+  .valued-deals-top {
+    width: 100%;
+    background-color: #5b6149;
+
+    .deals-title-wrapper {
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        font-family: $font-M;
+        font-weight: 400;
+        font-size: $fz * 3;
+        color: #fff;
+        text-align: center;
+        line-height: $fz * 4;
+        transform: scale(30%);
+        transition: $tt;
+        opacity: 0;
+        visibility: hidden;
+      }
+      p {
+        color: #fff;
+        margin-top: $fz * 2;
+        padding: 0 $fz * 6 15px;
+        text-align: center;
+        line-height: $fz * 2;
+        font-weight: 300;
+        font-family: $font-R;
+        font-style: italic;
+        font-size: $fz + 3px;
+        transform: translateY(100%);
+        transition: $tt;
+        opacity: 0;
+        visibility: hidden;
+      }
+      button {
+        @include button;
+        text-transform: uppercase;
+        background: #fff;
+        color: #000;
+        padding: $fz $fz * 3;
+        margin: 10px auto;
+        transform: scale(30%);
+        transition: $tt;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+  .valued-deals-bottom {
+    padding: 140px 20px 80px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    .left-img-wrapper {
+      padding-right: 50px;
+    
+        .blue-square {
+        background: #3151aa;
+        width: 500px;
+        height: 500px;
+        position: relative;
+        padding-right: 75px;
+          .deals-image {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+            top: -15%;
+            right: -15%;
+            transform: scale(30%) translateX(-10%);
+            transform-origin: left bottom;
+            transition: $tt;
+            opacity: 0;
+            visibility: hidden;
+          }
+      }
+    }
+ 
+    .right-text-wrapper {
+      padding: 0 $fz * 2;
+      background-color: #fff;
+      z-index: 2;
+      transform: translate(50%);
+      transition: $tt;
+      opacity: 0;
+      visibility: hidden;
+      h3 {
+        font-family: $font-M;
+        font-weight: 400;
+        font-size: $fz * 2;
+        margin-bottom: 25px;
+      }
+      h4 {
+        font-family: $font-R;
+        font-weight: 500;
+        font-size: $fz;
+        margin-bottom: 25px;
+      }
+      p {
+        font-family: $font-R;
+        font-weight: 300;
+        font-size: $fz;
+        line-height: $fz * 2;
+        margin-bottom: 25px;
+      }
+      button {
+        @include button;
+        text-transform: uppercase;
+        padding: $fz $fz * 3;
+        margin: 10px auto;
+      }
+    }
+  }
+}

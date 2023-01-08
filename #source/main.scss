@@ -1,10 +1,14 @@
 @import "resetDefault";
 @import "variables";
 @import "rentSection";
+@import "valuedDealsSection";
+@import "travelerSection";
+@import "driveSection";
 
 //
 body {
   user-select: none;
+  width: 100%;
   overflow-x: hidden;
   &::-webkit-scrollbar-track
   {
@@ -111,8 +115,11 @@ body {
     &:hover {
       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
         rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-      cursor: url(../icons/ferrari-pointer.svg), default;
+      
       opacity: 1;
+    }
+    &:active {
+      cursor: url(../icons/ferrari-pointer.svg), default;
     }
   }
 

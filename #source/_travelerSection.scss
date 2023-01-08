@@ -1,0 +1,82 @@
+@import "variables";
+
+.traveler-information {
+  width: 100%;
+  background-color: #945a5c;
+  padding: $fz*3 0px;
+
+    .traveler-image-container {
+      max-width: 90%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      gap: $fz*1.5;
+      overflow: hidden;
+      position: relative; 
+    
+        .img-wrapper {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: 500ms ease;
+              &:hover {
+                transform: scale(1.3);
+              }
+              }
+        }
+      }
+    .traveler-title-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2  {
+          font-family: $font-M;
+          font-weight: 400;
+          font-size: $fz * 3;
+          color: #fff;
+          text-align: center;
+          line-height: $fz * 4;
+          transform: scale(30%);
+          transition: $tt;
+          opacity: 0;
+          visibility: hidden;
+        }
+        p {
+          color: #fff;
+          margin-top: $fz * 2;
+          padding: 0 $fz * 6 15px;
+          text-align: center;
+          line-height: $fz * 2;
+          font-weight: 300;
+          font-family: $font-R;
+          font-style: italic;
+          font-size: $fz + 3px;
+          transform: translateY(100%);
+          transition: $tt;
+          opacity: 0;
+          visibility: hidden;
+        }
+        button {
+          @include button;
+          text-transform: uppercase;
+          background: #fff;
+          color: #000;
+          padding: $fz $fz * 3;
+          margin: 10px auto;
+          transform: scale(30%);
+          transition: $tt;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+}
