@@ -88,6 +88,17 @@ a, a:visited {
   padding: 30px 0px;
   background-color: inherit;
 }
+@media (max-width: 940px) {
+  .rent-header-container {
+    font-size: 32px;
+    line-height: 16px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 15px;
+    justify-items: center;
+  }
+}
 
 .rent-cars-title {
   color: #fff;
@@ -104,6 +115,21 @@ a, a:visited {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 1000px) {
+  .rent-cars-title {
+    -webkit-transform: scale(0%) translate(0px, 0px);
+            transform: scale(0%) translate(0px, 0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media (max-width: 940px) {
+  .rent-cars-title {
+    font-size: 32px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
 
 .rent-cars-call {
   -ms-grid-column-align: center;
@@ -117,6 +143,14 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 1000px) {
+  .rent-cars-call {
+    -webkit-transform: scale(0%) translate(0px, 0px);
+            transform: scale(0%) translate(0px, 0px);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .rent-cars-call-btn {
@@ -164,11 +198,22 @@ a, a:visited {
 .rent-cars-call-btn:active:active {
   cursor: url(../icons/ferrari-pointer.svg), default;
 }
+@media (max-width: 940px) {
+  .rent-cars-call-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
 
 .rent-car-title {
   padding: 30px 0;
   width: 80%;
   margin: 32px auto 48px;
+}
+@media (max-width: 940px) {
+  .rent-car-title {
+    margin: 32px auto;
+  }
 }
 .rent-car-title h1 {
   font-family: "Montserrat", sans-serif;
@@ -181,6 +226,12 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 940px) {
+  .rent-car-title h1 {
+    font-size: 32px;
+    padding: 10px;
+  }
 }
 .rent-car-title p {
   margin-top: 32px;
@@ -196,6 +247,16 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 940px) {
+  .rent-car-title p {
+    font-size: 16px;
+    padding: 10px;
+    -webkit-transform: scale(0%);
+            transform: scale(0%);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .cars-container {
@@ -358,6 +419,12 @@ a, a:visited {
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 660px) {
+  .valued-deals-container .valued-deals-top .deals-title-wrapper h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
 .valued-deals-container .valued-deals-top .deals-title-wrapper p {
   color: #fff;
   margin-top: 32px;
@@ -374,6 +441,13 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 660px) {
+  .valued-deals-container .valued-deals-top .deals-title-wrapper p {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px;
+  }
 }
 .valued-deals-container .valued-deals-top .deals-title-wrapper button {
   -webkit-box-align: center;
@@ -473,6 +547,14 @@ a, a:visited {
   transition: all 1.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 980px) {
+  .valued-deals-container .valued-deals-bottom .left-img-wrapper .blue-square .deals-image {
+    -webkit-transform: translate(0, 0) scale(1, 1);
+            transform: translate(0, 0) scale(1, 1);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 .valued-deals-container .valued-deals-bottom .right-text-wrapper {
   padding: 0 32px;
